@@ -1,38 +1,49 @@
 # Python
 __pycache__/
 *.py[cod]
-*.so
-*.egg
-*.egg-info/
+*$py.class
 *.pyo
 *.pyd
-*.pkl
-p.ipynb
-# Virtual environment
-venv/
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
 .env
+.venv
+env/
+venv/
+ENV/
 
-*src/assets/Data
-app2.py
-**/Data/
+# Streamlit
+.streamlit/secrets.toml
 
-# IDE and editor settings
+# User-generated data & temp files
+src/assets/Data/*/
+src/assets/temp/
+*.mp3
+*.wav
+*.mp4
+*.mkv
+*.webm
+*.m4a
+
+# HuggingFace model cache
+.cache/
+models_cache/
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS-specific
+# OS
 .DS_Store
 Thumbs.db
 
-# Logs and temp
+# Logs
 *.log
-outputs/
-temp/
-
-# Models and large files
-
-
-# Streamlit cache
-.streamlit/
+logs/
